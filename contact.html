@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MILAGRO</title>
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://milagro.style">
+	<meta property="og:image" content="./img/site-thumb.jpg">
+	<meta property="og:title" content="MILAGRO">
+	<meta property="og:description" content="스페인어로 기적을 뜻하는 MILAGRO는 완전한 개인 맞춤 made to measure 서비스로 정장과 기존의 남성복과 여성복의 틀을 벗어난 맞춤 블레이져와 코트를 제작합니다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<style>
+		nav {background: white;}
+		nav .logo{background: url('./img/logo-black.svg') no-repeat; background-size:100%;}
+		nav .menu{display: block;}
+		nav .contact{border-bottom: 2px solid black}
+	</style>
+	<section>
+		<nav id="gnav">
+			<div class="menu brand">
+				<a href="brand.html" class="nav-link">BRAND</a>
+			</div>
+			<div class="menu lookbook">
+				<a href="lookbook.html" class="nav-link">LOOKBOOK</a>
+				<ul class="lookbook-list">
+					<li><a href="lookbook.html">AW18 PREVIEW</a></li>
+					<li><a href="lookbook.html">MILAGRO x BELIER</a></li>
+				</ul>
+			</div>
+			<div class="menu contact">
+				<a href="contact.html" class="nav-link">CONTACT</a>
+			</div>				
+			<div class="logo" onclick="window.location.href='./index.html';"> </div>
+		</nav>
+	</section>
+	<section>
+		<p class="center bold" style="color:black; margin-top: 5em;">info@milagro.style</p>
+		<p class="center bold" style="color:black; margin-top: 5em;">STORE</p>
+		<p class="bold kor center" style="margin-top:1rem; font-weight: 500; color:#555">롯데백화점 강남점</p>
+		<p class="center" style="margin-top:0.5rem;">Lotte Department Gangnam</p>
+		<p class="bold kor center" style="font-size:1em; margin-top:1rem; font-weight: 500; ">서울특별시 강남구 도곡로 401(대치동)</p>
+		<p class="center" style="margin-top:0.5rem;">401, Dogok-ro, Gangnam-gu, Seoul</p>
+	</section>
+	<section>
+		<div id="map"></div>
+	</section>
+	<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var milagro = {lat: 37.497164, lng: 127.053273}; 
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: milagro});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: milagro, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG8M9P8-4Na7GO-ajUK5NqE8coj-U5a8c&callback=initMap">
+    </script>
+</body>
+</html>

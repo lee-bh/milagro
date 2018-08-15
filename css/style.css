@@ -1,0 +1,73 @@
+/* Milagro Style by BH */
+html { font-family: 'Spoqa Han Sans', 'Sans-serif'; 
+        font-weight: 400; box-sizing: border-box;} 
+img {width:100%; display: block;}
+a{text-decoration: none; color:black;}
+a:hover{border-bottom:2px solid black;}
+ul{padding:0; margin:0;}
+li{list-style-type: none; text-align: left;}
+.center{text-align: center}
+.light{font-weight: lighter}
+.normal{font-weight: normal}
+.bold{font-weight:bold;}
+.double{line-height: 1.8}
+h1{font-size: 2em; margin:0; padding:0;}
+h2{font-size: 1.3em; line-height:1.5; margin:0; padding:0;}
+p{font-size:0.85em; color:#888; margin:0; padding:0;}
+.kor{font-weight:300; font-size:1.1rem; line-height:1.5;}
+.left{float:left;}
+.mt5{margin-top: 5em}
+
+section{ width:1200px; margin:auto; }
+#mVideo { width: 100%;}
+nav { position:relative; height:96px;z-index: 9999; transition: all 0.5s;}
+nav:hover{background: white;}
+nav:hover .menu{display: block}
+
+nav .logo{ position: absolute; width:150px; height:100px; left:calc(50% - 75px); top:22px; background: url('../img/logo.svg') no-repeat; background-size: 100%}
+nav:hover .logo{background: url('../img/logo-black.svg') no-repeat; background-size:100%;}
+nav .logo:hover{cursor:pointer;}
+nav .menu{ position: absolute; top: 46px; font-size: 0.7em; font-weight: 800; display: none;}
+
+nav .brand{left:5.6%;}
+nav .lookbook{left:16.4%;}
+nav .lookbook .lookbook-list{display: none}
+nav .lookbook:hover .lookbook-list{display: block;}
+
+nav .nav-link, nav .lookbook li a{display: block; height:25px; line-height: 25px;}
+nav .contact{right:5.1%;}
+
+.cross{margin-top: -96px}
+#bar { height:40px; top:96px; width:100%; position: absolute;}
+#float-00{ width:443px; height:260px; background: white; position: absolute; left:calc(50% - 222px); top:calc(50% - 130px); }
+#find-a-store{ display:block; width:355px; height:55px; color:white; background: black; text-align: center; line-height: 55px; margin:auto; font-size: 1.5em;}
+#find-a-store:hover{background: white; color:black;}
+#brand-copy{width:762px; margin:auto; margin-top: 3em; }
+#brand-para{ width:426px; }
+#map { height: 382px; width: 636px; margin: auto; margin-top: 2.3em;margin-bottom:8em;}
+#lookbook-img{width:809px;}
+@media all and (max-width: 1200px) {
+	section{ width:100%; }
+}
+
+@media all and (max-width: 809px) {
+	#lookbook-img{ width:100%; }
+}
+
+@media all and (max-width: 480px) {
+	nav {height:200px;}
+	nav .menu{top: 110px;}
+	nav .lookbook{left:31%;}
+	nav {background: white}
+	nav .logo{background: url('../img/logo-black.svg') no-repeat; background-size: 100%}
+	nav .menu{display: block;}
+	nav .lookbook .lookbook-list{display: block}
+	.cross{margin-top: 0px}
+	#float-00{width:100%;position: relative; top:0px;left:0;height:200px;}
+	#find-a-store{width:100%;}
+	.mt5{margin-top: 2em;}
+	section p{text-align: center; width:100%;}
+	#brand-copy{width:100%;}
+	#brand-para{width:100%; margin-bottom: 2em;}
+	#map{width:100%;}
+}
